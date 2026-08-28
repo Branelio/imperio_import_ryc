@@ -9,6 +9,8 @@ export const metadata = {
 
 export default function UbicacionPage() {
   const mapLink = 'https://maps.app.goo.gl/nxhUdMvRFhgaRF5Y6'
+  // Exact coordinates extracted from Google Maps pin: -0.3209979, -78.5506503
+  const embedMapUrl = 'https://maps.google.com/maps?q=-0.3209979,-78.5506503&z=17&output=embed'
 
   return (
     <div className="min-h-screen py-10 md:py-16">
@@ -138,10 +140,10 @@ export default function UbicacionPage() {
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8 mb-8">
             <div>
               <h2 className="font-display text-2xl font-bold mb-2" style={{ color: 'var(--text-primary)' }}>
-                Mapa Interactiva con <span style={{ color: 'var(--gold)' }}>Ubicación GPS</span>
+                Mapa Interactivo con <span style={{ color: 'var(--gold)' }}>Ubicación GPS</span>
               </h2>
               <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
-                Hacé clic en el mapa o en el botón para abrir el punto de referencia directo en Google Maps.
+                El marcador rojo señala la ubicación exacta de la importadora. Haz clic en el botón si deseas abrir la app de mapas.
               </p>
             </div>
             <a
@@ -158,8 +160,8 @@ export default function UbicacionPage() {
           {/* Map Container */}
           <div className="relative w-full h-[380px] md:h-[480px] rounded-2xl overflow-hidden border border-[var(--border-default)] shadow-xl">
             <iframe
-              title="Ubicación exacta Imperio Import RyC"
-              src="https://maps.google.com/maps?q=https://maps.app.goo.gl/nxhUdMvRFhgaRF5Y6&output=embed"
+              title="Ubicación exacta con pin Imperio Import RyC"
+              src={embedMapUrl}
               width="100%"
               height="100%"
               style={{ border: 0 }}
