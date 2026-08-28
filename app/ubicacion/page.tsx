@@ -1,13 +1,15 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { MapPin, Clock, Phone, MessageSquare, ShieldCheck, Truck, Globe, ChevronRight } from 'lucide-react'
+import { MapPin, Clock, Phone, MessageSquare, ShieldCheck, Truck, Globe, ChevronRight, ExternalLink } from 'lucide-react'
 
 export const metadata = {
   title: 'Encuéntranos - Imperio Import RyC',
-  description: 'Conoce nuestra ubicación, horarios de atención y canales de contacto de Imperio Import RyC en Ecuador.',
+  description: 'Conoce nuestra ubicación, horarios de atención (Lunes a Viernes 9:30am a 5:00pm) y mapa de Imperio Import RyC en Ecuador.',
 }
 
 export default function UbicacionPage() {
+  const mapLink = 'https://maps.app.goo.gl/nxhUdMvRFhgaRF5Y6'
+
   return (
     <div className="min-h-screen py-10 md:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -25,7 +27,7 @@ export default function UbicacionPage() {
             ¿ Dónde <span style={{ color: 'var(--gold)' }}>Encontrarnos</span> ?
           </h1>
           <p className="text-base md:text-lg" style={{ color: 'var(--text-secondary)' }}>
-            Visítanos en nuestras instalaciones o contáctate directamente con nuestro equipo de ventas para atención inmediata.
+            Visítanos en nuestras instalaciones o contáctate directamente con nuestro equipo para envíos y entregas inmediatas.
           </p>
         </div>
 
@@ -40,25 +42,28 @@ export default function UbicacionPage() {
                 <MapPin size={24} />
               </div>
               <h2 className="font-display text-xl font-bold mb-3" style={{ color: 'var(--text-primary)' }}>
-                Dirección Principal
+                Dirección Física
               </h2>
               <p className="text-sm leading-relaxed mb-4" style={{ color: 'var(--text-secondary)' }}>
-                Ecuador — Bodega y Centro de Distribución de Importaciones.
+                Ecuador — Punto de distribución y atención al cliente. Haz clic abajo para abrir en Google Maps con el pin exacto.
               </p>
               <div className="rounded-xl p-3 text-xs flex items-center gap-2 mb-4"
                 style={{ backgroundColor: 'var(--bg-input)', border: '1px solid var(--border-default)', color: 'var(--text-tertiary)' }}>
                 <Truck size={16} className="shrink-0" style={{ color: 'var(--gold)' }} />
-                <span>Despachos diarios a todas las provincias del Ecuador</span>
+                <span>Despachos y envíos diarios a todo el Ecuador</span>
               </div>
             </div>
             <a
-              href="https://maps.google.com/?q=Ecuador"
+              href={mapLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-between text-xs font-semibold uppercase tracking-wider py-2 px-3 rounded-lg transition-colors hover:bg-[var(--gold-bg)]"
-              style={{ color: 'var(--gold)' }}
+              className="inline-flex items-center justify-between text-xs font-semibold uppercase tracking-wider py-2.5 px-3.5 rounded-xl transition-all border"
+              style={{ borderColor: 'var(--gold-border)', backgroundColor: 'var(--gold-bg)', color: 'var(--gold)' }}
             >
-              <span>Ver en Google Maps</span>
+              <span className="flex items-center gap-1.5">
+                <ExternalLink size={14} />
+                Abrir Pin en Google Maps
+              </span>
               <ChevronRight size={14} />
             </a>
           </div>
@@ -74,23 +79,19 @@ export default function UbicacionPage() {
                 Horario de Atención
               </h2>
               <ul className="space-y-3 text-sm">
-                <li className="flex justify-between items-center pb-2 border-b" style={{ borderColor: 'var(--border-subtle)' }}>
-                  <span style={{ color: 'var(--text-secondary)' }}>Lunes a Viernes:</span>
-                  <span className="font-semibold" style={{ color: 'var(--text-primary)' }}>08:30 AM – 06:30 PM</span>
+                <li className="flex justify-between items-center pb-2.5 border-b" style={{ borderColor: 'var(--border-subtle)' }}>
+                  <span className="font-medium" style={{ color: 'var(--text-secondary)' }}>Lunes a Viernes:</span>
+                  <span className="font-bold text-sm" style={{ color: 'var(--gold)' }}>9:30 AM – 5:00 PM</span>
                 </li>
-                <li className="flex justify-between items-center pb-2 border-b" style={{ borderColor: 'var(--border-subtle)' }}>
-                  <span style={{ color: 'var(--text-secondary)' }}>Sábados:</span>
-                  <span className="font-semibold" style={{ color: 'var(--text-primary)' }}>09:00 AM – 04:00 PM</span>
-                </li>
-                <li className="flex justify-between items-center">
-                  <span style={{ color: 'var(--text-secondary)' }}>Domingos:</span>
-                  <span className="font-semibold" style={{ color: 'var(--gold)' }}>Atención vía WhatsApp</span>
+                <li className="flex justify-between items-center pb-2.5 border-b" style={{ borderColor: 'var(--border-subtle)' }}>
+                  <span style={{ color: 'var(--text-secondary)' }}>Sábados y Domingos:</span>
+                  <span className="font-semibold text-xs" style={{ color: 'var(--text-tertiary)' }}>Atención vía WhatsApp</span>
                 </li>
               </ul>
             </div>
             <div className="mt-6 pt-4 border-t text-xs flex items-center gap-2" style={{ borderColor: 'var(--border-subtle)', color: 'var(--text-tertiary)' }}>
               <ShieldCheck size={16} style={{ color: 'var(--green)' }} />
-              <span>Respuesta rápida garantizada</span>
+              <span>Atención rápida durante jornada laboral</span>
             </div>
           </div>
 
@@ -102,10 +103,10 @@ export default function UbicacionPage() {
                 <MessageSquare size={24} />
               </div>
               <h2 className="font-display text-xl font-bold mb-3" style={{ color: 'var(--text-primary)' }}>
-                Atención al Cliente
+                Atención Directa
               </h2>
               <p className="text-sm leading-relaxed mb-4" style={{ color: 'var(--text-secondary)' }}>
-                ¿Tienes dudas sobre un producto, pedido al por mayor o envíos? Escríbenos directamente.
+                Escríbenos directamente por WhatsApp para consultas, cotizaciones o retirar tu producto.
               </p>
               <div className="space-y-2 mb-4">
                 <div className="flex items-center gap-2 text-sm font-semibold" style={{ color: 'var(--text-primary)' }}>
@@ -114,12 +115,12 @@ export default function UbicacionPage() {
                 </div>
                 <div className="flex items-center gap-2 text-xs" style={{ color: 'var(--text-tertiary)' }}>
                   <Globe size={14} style={{ color: 'var(--gold)' }} />
-                  <span>Importaciones de México, China y Colombia</span>
+                  <span>Importaciones directas: México, China, Colombia</span>
                 </div>
               </div>
             </div>
             <a
-              href="https://wa.me/593959883921?text=Hola,%20quisiera%20consultar%20sobre%20la%20ubicacion%20y%20horarios%20de%20atencion"
+              href="https://wa.me/593959883921?text=Hola,%20quiero%20informacion%20sobre%20la%20ubicacion%20y%20productos"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary w-full justify-center text-sm py-3"
@@ -137,30 +138,31 @@ export default function UbicacionPage() {
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8 mb-8">
             <div>
               <h2 className="font-display text-2xl font-bold mb-2" style={{ color: 'var(--text-primary)' }}>
-                Mapa de <span style={{ color: 'var(--gold)' }}>Ubicación</span>
+                Mapa Interactiva con <span style={{ color: 'var(--gold)' }}>Ubicación GPS</span>
               </h2>
               <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
-                Coordinamos envíos a todo el territorio nacional ecuatoriano.
+                Hacé clic en el mapa o en el botón para abrir el punto de referencia directo en Google Maps.
               </p>
             </div>
             <a
-              href="https://wa.me/593959883921?text=Hola,%20necesito%20la%20ubicacion%20exacta%20para%20retirar%20un%20producto"
+              href={mapLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-secondary text-sm shrink-0"
+              className="btn-primary text-sm shrink-0"
             >
-              Solicitar ubicación exacta por GPS
+              <ExternalLink size={16} />
+              Abrir GPS en Google Maps
             </a>
           </div>
 
-          {/* Styled Map Container / Embed */}
-          <div className="relative w-full h-[350px] md:h-[450px] rounded-2xl overflow-hidden border border-[var(--border-default)] shadow-lg">
+          {/* Map Container */}
+          <div className="relative w-full h-[380px] md:h-[480px] rounded-2xl overflow-hidden border border-[var(--border-default)] shadow-xl">
             <iframe
-              title="Ubicacion Imperio Import RyC"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.887965415278!2d-78.48!3d-0.18!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMTAnNDguMCJTIDc4wrAyOCc0OC4wIlc!5e0!3m2!1ses!2sec!4v1650000000000!5m2!1ses!2sec"
+              title="Ubicación exacta Imperio Import RyC"
+              src="https://maps.google.com/maps?q=https://maps.app.goo.gl/nxhUdMvRFhgaRF5Y6&output=embed"
               width="100%"
               height="100%"
-              style={{ border: 0, filter: 'contrast(1.05)' }}
+              style={{ border: 0 }}
               allowFullScreen={false}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
@@ -179,7 +181,7 @@ export default function UbicacionPage() {
                 IMPERIO IMPORT RyC
               </h3>
               <p className="text-sm mt-1" style={{ color: 'var(--text-secondary)' }}>
-                Calidad &middot; Confianza &middot; Compromiso — Productos importados al mejor precio.
+                Calidad &middot; Confianza &middot; Compromiso — Productos importados al mejor precio en Ecuador.
               </p>
             </div>
           </div>
