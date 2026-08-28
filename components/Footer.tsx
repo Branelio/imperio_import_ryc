@@ -39,10 +39,8 @@ export default function Footer() {
             <h4 className="font-semibold text-sm mb-4" style={{ color: 'var(--gold)' }}>Navegacion</h4>
             <ul className="space-y-2.5">
               <li><Link href="/" className="text-sm transition-colors hover:text-[var(--gold)]" style={{ color: 'var(--text-secondary)' }}>Inicio</Link></li>
-              <li><Link href="/productos" className="text-sm transition-colors hover:text-[var(--gold)]" style={{ color: 'var(--text-secondary)' }}>Catalogo completo</Link></li>
-              <li><Link href="/productos?cat=Tecnologia" className="text-sm transition-colors hover:text-[var(--gold)]" style={{ color: 'var(--text-secondary)' }}>Tecnologia</Link></li>
-              <li><Link href="/productos?cat=Hogar" className="text-sm transition-colors hover:text-[var(--gold)]" style={{ color: 'var(--text-secondary)' }}>Hogar</Link></li>
-              <li><Link href="/productos?cat=Moda" className="text-sm transition-colors hover:text-[var(--gold)]" style={{ color: 'var(--text-secondary)' }}>Moda</Link></li>
+              <li><Link href="/productos" className="text-sm transition-colors hover:text-[var(--gold)]" style={{ color: 'var(--text-secondary)' }}>Catálogo completo</Link></li>
+              <li><Link href="/ubicacion" className="text-sm transition-colors hover:text-[var(--gold)]" style={{ color: 'var(--text-secondary)' }}>Encuéntranos / Ubicación</Link></li>
             </ul>
           </div>
 

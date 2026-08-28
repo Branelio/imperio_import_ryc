@@ -13,10 +13,8 @@ export default function Header() {
 
   const navLinks = [
     { href: '/', label: 'Inicio' },
-    { href: '/productos', label: 'Catalogo' },
-    { href: '/productos?cat=Tecnologia', label: 'Tecnologia' },
-    { href: '/productos?cat=Hogar', label: 'Hogar' },
-    { href: '/productos?cat=Moda', label: 'Moda' },
+    { href: '/productos', label: 'Catálogo' },
+    { href: '/ubicacion', label: 'Encuéntranos' },
   ]
 
   return (
