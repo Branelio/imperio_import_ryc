@@ -52,17 +52,17 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3">
         <div className="flex items-center justify-between gap-4">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 shrink-0 group">
-            <div className="relative w-10 h-10 md:w-11 md:h-11 rounded-full overflow-hidden border border-[var(--gold)]/40 transition-transform group-hover:scale-105 shrink-0 shadow-md">
+          <Link href="/" className="flex items-center gap-2 sm:gap-3 shrink-0 group">
+            <div className="relative w-9 h-9 sm:w-10 sm:h-10 md:w-11 md:h-11 rounded-full overflow-hidden border border-[var(--gold)]/40 transition-transform group-hover:scale-105 shrink-0 shadow-md">
               <Image src="/logo.jpg" alt="Imperio Import RyC Logo" fill className="object-cover" />
             </div>
-            <div className="hidden sm:block">
-              <h1 className="font-display text-lg md:text-xl font-bold leading-tight"
+            <div className="flex flex-col">
+              <h1 className="font-display text-base sm:text-lg md:text-xl font-bold leading-tight"
                 style={{ color: 'var(--gold)' }}
               >
                 IMPERIO
               </h1>
-              <p className="text-[10px] md:text-xs tracking-[0.2em] font-medium"
+              <p className="text-[9px] sm:text-[10px] md:text-xs tracking-[0.18em] font-medium"
                 style={{ color: 'var(--text-tertiary)' }}
               >
                 IMPORT RyC

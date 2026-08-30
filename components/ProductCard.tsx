@@ -101,8 +101,8 @@ export default function ProductCard({ product }: ProductCardProps) {
 
         {/* Bodega */}
         {product.inBodega && (
-          <p className="text-[10px] mt-2" style={{ color: 'var(--text-tertiary)' }}>
-            {product.inBodega}
+          <p className="text-[10px] mt-2 font-medium tracking-wide uppercase" style={{ color: 'var(--text-tertiary)' }}>
+            {product.inBodega.replace(/RUBY/gi, 'IMPERIO')}
           </p>
         )}
       </div>
