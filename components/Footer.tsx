@@ -1,8 +1,16 @@
+'use client'
+
 import Link from 'next/link'
 import Image from 'next/image'
 import { Phone, MapPin, Facebook, Instagram } from 'lucide-react'
+import { usePathname } from 'next/navigation'
 
 export default function Footer() {
+  const pathname = usePathname()
+  if (pathname?.startsWith('/admin')) {
+    return null
+  }
+
   return (
     <footer className="border-t transition-colors duration-300" style={{ backgroundColor: 'var(--bg-secondary)', borderColor: 'var(--border-default)' }}>
       {/* Main footer */}

@@ -2,9 +2,16 @@
 
 import { useState } from 'react'
 import { MessageCircle, X } from 'lucide-react'
+import { usePathname } from 'next/navigation'
 
 export default function WhatsAppWidget() {
+  const pathname = usePathname()
   const [isOpen, setIsOpen] = useState(false)
+
+  if (pathname?.startsWith('/admin')) {
+    return null
+  }
+
   const phoneNumber = '593959883921'
   const defaultMessage = 'Hola, quiero informacion sobre sus productos'
 

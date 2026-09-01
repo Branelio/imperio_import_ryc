@@ -21,3 +21,24 @@ export interface Category {
   count: number
   slug: string
 }
+
+export interface DashboardStats {
+  totalProducts: number
+  inStockProducts: number
+  outOfStockProducts: number
+  totalStockUnits: number
+  inventoryValueWholesale: number
+  inventoryValuePvp: number
+  totalCategories: number
+  withImageCount: number
+  withoutImageCount: number
+}
+
+export interface TelegramPublishLog {
+  timestamp: string
+  status: 'idle' | 'running' | 'success' | 'error'
+  message: string
+  processedCount?: number
+  totalCount?: number
+}
+

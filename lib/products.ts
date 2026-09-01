@@ -53,3 +53,29 @@ export function searchProducts(query: string): Product[] {
     p.sku.toLowerCase().includes(q)
   )
 }
+
+export function getDashboardStats() {
+  const prods = productos as Product[]
+  const totalProducts = prods.length
+  const inStockProducts = prods.filter(p => p.stock > 0).length
+  const outOfStockProducts = totalProducts - inStockProducts
+  const totalStockUnits = prods.reduce((acc, p) => acc + (p.stock || 0), 0)
+  const inventoryValueWholesale = prods.reduce((acc, p) => acc + ((p.price || 0) * (p.stock || 0)), 0)
+  const inventoryValuePvp = prods.reduce((acc, p) => acc + ((p.priceSuggested || p.price || 0) * (p.stock || 0)), 0)
+  const totalCategories = getCategories().length
+  const withImageCount = prods.filter(p => p.hasImage && p.images && p.images.length > 0).length
+  const withoutImageCount = totalProducts - withImageCount
+
+  return {
+    totalProducts,
+    inStockProducts,
+    outOfStockProducts,
+    totalStockUnits,
+    inventoryValueWholesale,
+    inventoryValuePvp,
+    totalCategories,
+    withImageCount,
+    withoutImageCount
+  }
+}
+

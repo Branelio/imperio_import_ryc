@@ -3,13 +3,21 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import Link from 'next/link'
-import { Search, Menu, X, Phone, Sun, Moon } from 'lucide-react'
+import { Search, Menu, X, Phone, Sun, Moon, Lock } from 'lucide-react'
 import { useTheme } from '@/context/ThemeContext'
 
+import { usePathname } from 'next/navigation'
+
 export default function Header() {
+  const pathname = usePathname()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
   const { theme, toggle } = useTheme()
+
+  if (pathname?.startsWith('/admin')) {
+    return null
+  }
+
 
   const navLinks = [
     { href: '/', label: 'Inicio' },
@@ -112,6 +120,16 @@ export default function Header() {
               {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
             </button>
 
+            {/* Admin Login Link */}
+            <Link
+              href="/admin/login"
+              className="hidden sm:flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-semibold transition-all border border-[var(--gold)]/30 hover:border-[var(--gold)] text-[var(--gold)] hover:bg-[var(--gold-bg)]"
+              title="Panel de Administración"
+            >
+              <Lock className="w-3.5 h-3.5" />
+              <span>Acceso Admin</span>
+            </Link>
+
             {/* WhatsApp */}
             <a
               href="https://wa.me/593959883921?text=Hola,%20quiero%20informacion%20sobre%20sus%20productos"
@@ -167,11 +185,19 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
+            <Link
+              href="/admin/login"
+              onClick={() => setIsMenuOpen(false)}
+              className="flex items-center justify-center gap-2 px-4 py-3 rounded-xl mt-2 text-sm font-semibold border border-[var(--gold)]/40 text-[var(--gold)] hover:bg-[var(--gold-bg)] transition-all"
+            >
+              <Lock className="w-4 h-4" />
+              Acceso Panel Admin
+            </Link>
             <a
               href="https://wa.me/593959883921?text=Hola,%20quiero%20informacion"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 px-4 py-3 rounded-xl mt-2 text-sm font-medium"
+              className="flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-sm font-medium"
               style={{ backgroundColor: 'var(--green)', color: '#fff' }}
             >
               <Phone size={16} />
