@@ -1,5 +1,27 @@
 [
   {
+    "id": 179292,
+    "sku": "IMP-6486",
+    "name": "Moladora de prueba",
+    "slug": "moladora-de-prueba",
+    "type": "Físico",
+    "description": "kit de prueba",
+    "stock": 2,
+    "price": 50,
+    "priceSuggested": 75,
+    "categories": [
+      "Hogar",
+      "Otro"
+    ],
+    "approved": true,
+    "inBodega": "Prueba",
+    "hasImage": true,
+    "images": [
+      "https://http2.mlstatic.com/D_NQ_NP_878809-MEC103739934082_012026-O.webp"
+    ],
+    "isDropi": false
+  },
+  {
     "id": 133409,
     "sku": "JD234445",
     "name": "300M WIFI REPARTIFOR DE INTERNET",
@@ -8,7 +30,7 @@
     "description": "<h2>Repetidor de WiFi 300 Mbps</h2><p>Un <strong>repetidor de WiFi 300 Mbps</strong> es un dispositivo electrónico que <strong>amplía o repite la señal de internet inalámbrico (WiFi)</strong> de un router principal para que llegue a lugares donde la señal es débil o no llega. Su función principal es <strong>mejorar la cobertura de internet en casas, oficinas o edificios</strong>, eliminando las llamadas “zonas muertas” de señal.</p><p>Este equipo recibe la señal del router y la vuelve a transmit",
     "stock": 100,
     "price": 11.75,
-    "priceSuggested": 25.0,
+    "priceSuggested": 25,
     "categories": [
       "Tecnologia"
     ],
@@ -55,8 +77,8 @@
     "type": "SIMPLE",
     "description": "<p></p><h3><span style=\"color: rgb(73, 80, 87);\"><span style=\"background-color: rgb(255, 255, 255);\">ANILLO SMART RING INTELIGENTE</span></span></h3><p>Estos anillos ofrecen diseños modernos, batería prolongada y funciones avanzadas como IA, análisis deportivo y monitoreo de bienestar.</p><h3>Características principales </h3><ul><li><p>Monitoreo de frecuencia cardíaca.</p></li><li><p>Medición de oxígeno en sangre (SpO2).</p></li><li><p>Seguimiento del sueño.</p></li><li><p>Conteo de pasos y calo",
     "stock": 108,
-    "price": 20.0,
-    "priceSuggested": 20.0,
+    "price": 20,
+    "priceSuggested": 20,
     "categories": [
       "Moda",
       "Tecnologia"
@@ -175,8 +197,8 @@
     "type": "SIMPLE",
     "description": "<h4 style=\"text-align: start;\"><strong><span style=\"color: rgb(50, 57, 77);\"><span style=\"background-color: rgb(255, 255, 255);\">🍰✨ Batidora Eléctrica RAF – 7 Velocidades ✨🍞</span></span></strong></h4><h4 style=\"text-align: start;\"><strong><span style=\"color: rgb(50, 57, 77);\"><span style=\"background-color: rgb(255, 255, 255);\">¡Tu mejor aliada en la cocina! 👩‍🍳👨‍🍳 Diseñada para dar potencia, resistencia y comodidad en cada preparación.</span></span></strong></h4><h4 style=\"text-align: start;\"><",
     "stock": 100,
-    "price": 10.0,
-    "priceSuggested": 25.0,
+    "price": 10,
+    "priceSuggested": 25,
     "categories": [
       "Hogar",
       "Tecnologia",
@@ -273,7 +295,7 @@
     "description": "<h3>🔊 JBL Boombox 3 mini </h3><h3>JBL Boombox 3 mini </h3><p>💥 PRODUCTO GANADOR EN TENDENCIA 🔥</p><p>JBL BOMBOX 3 MIN REPLICA ORIGINAL – PRECIOS MAYOR Y MENOR 🔥</p><p>💰 Precio unidad: 16,75</p><p>💰 Precio mayor desde 3 unidades: 16,00</p><p>📦 STOCK ASEGURADO</p><p>🚚 DESPACHO EN 7 HORAS</p><p>⚠️ ÚLTIMAS UNIDADES DISPONIBLES</p><p>🔥 Productos probados antes de ser despachados</p><p>🚀 Apoyo en cierre de ventas con clientes</p><p>🔒 Garantía por defecto de fábrica</p><p>OFRECEMOS 93 % DE ENTREGAS EXI",
     "stock": 98,
     "price": 16.5,
-    "priceSuggested": 35.0,
+    "priceSuggested": 35,
     "categories": [
       "Tecnologia"
     ],
@@ -344,8 +366,8 @@
     "type": "SIMPLE",
     "description": "<p>El <strong>JBL Boombox 4</strong> es un parlante Bluetooth portátil de <strong>alta potencia</strong>, diseñado para ofrecer sonido profesional en espacios abiertos, fiestas y reuniones de gran tamaño. Combina <strong>rendimiento acústico avanzado</strong>, <strong>larga autonomía</strong> y <strong>resistencia extrema</strong>, posicionándose como uno de los modelos más potentes de la línea portátil de JBL.</p><hr><h3>🎵 <strong>Rendimiento de Audio</strong></h3><ul><li><p>🔹 Sistema de <stron",
     "stock": 0,
-    "price": 135.0,
-    "priceSuggested": 250.0,
+    "price": 135,
+    "priceSuggested": 250,
     "categories": [
       "Tecnologia",
       "Natural Home"
@@ -416,7 +438,7 @@
     "description": "<p></p><h2>BOONS BOX 3 AGARRADERA STOCK LIMITADATO ,BOONS BOX 3 AGARRADERA STOC LIMITADATO</h2><p>💥 PRODUCTO GANADOR EN TENDENCIA 🔥</p><p>BOONS BOX 3 AGARRADERA  REPLICA ORIGINAL – PRECIOS MAYOR Y MENOR 🔥</p><p>💰 Precio unidad: 14,95</p><p>💰 Precio mayor desde 3 unidades: 13,95</p><p>📦 STOCK ASEGURADO</p><p>🚚 DESPACHO EN 7 HORAS</p><p>⚠️ ÚLTIMAS UNIDADES DISPONIBLES</p><p>🔥 Productos probados antes de ser despachados</p><p>🚀 Apoyo en cierre de ventas con clientes</p><p>🔒 Garantía por defecto de ",
     "stock": 100,
     "price": 14.95,
-    "priceSuggested": 45.0,
+    "priceSuggested": 45,
     "categories": [
       "Tecnologia"
     ],
@@ -438,8 +460,8 @@
     "type": "SIMPLE",
     "description": "<p><strong><span style=\"color: rgb(75, 85, 99);\"><span style=\"background-color: rgb(255, 255, 255);\">Características principales</span></span></strong></p><ul><li><p><strong><span style=\"color: rgb(75, 85, 99);\"><span style=\"background-color: rgb(255, 255, 255);\">Diseño seguro:</span></span></strong><span style=\"color: rgb(75, 85, 99);\"><span style=\"background-color: rgb(255, 255, 255);\"> Son cajas hechas de metal resistente, a menudo empotradas en paredes seguras y protegidas con múltiples capa",
     "stock": 100,
-    "price": 35.0,
-    "priceSuggested": 35.0,
+    "price": 35,
+    "priceSuggested": 35,
     "categories": [
       "Hogar",
       "Tecnologia"
@@ -463,7 +485,7 @@
     "description": "<p><strong><span style=\"color: rgb(75, 85, 99);\"><span style=\"background-color: rgb(255, 255, 255);\">Cámara de Seguridad Solar para Exteriores – Protección Inteligente y Autónoma para tu Hogar</span></span></strong></p><p style=\"text-align: start;\"><span style=\"color: rgb(75, 85, 99);\"><span style=\"background-color: rgb(255, 255, 255);\">Mantén tu hogar seguro de día y de noche con esta cámara de vigilancia solar con batería incorporada. Diseñada para soportar condiciones extremas y ofrecer imáge",
     "stock": 97,
     "price": 47.5,
-    "priceSuggested": 65.0,
+    "priceSuggested": 65,
     "categories": [
       "Hogar",
       "Tecnologia"
@@ -487,7 +509,7 @@
     "description": "<p>CARACTERISTICAS</p><p>AUDIO DOBLE VIA</p><p>2 LENTES DUAL DE VISION</p><p>GIRATORIA MAS SENCOR DE MOVIMIENTO</p><p>SOPORTA RED 2,45G</p><p>IDEAL PARA INTERIORES Y EXTERIORES</p><p>ALARMA POLICIAL CON BOSINA </p>",
     "stock": 97,
     "price": 32.5,
-    "priceSuggested": 75.0,
+    "priceSuggested": 75,
     "categories": [
       "Hogar",
       "Tecnologia"
@@ -536,7 +558,7 @@
     "description": "<p><span style=\"color: rgb(75, 85, 99);\"><span style=\"background-color: rgb(255, 255, 255);\">Se trata de una mochila con parlante Bluetooth incorporado, posiblemente el modelo CH-M819. Sus características principales incluyen:</span></span></p><p>UNIDAD PRECIO 24.50</p><p>MAYORISTA PRECIO 20.50</p><ul><li><p><span style=\"color: rgb(75, 85, 99);\"><span style=\"background-color: rgb(255, 255, 255);\">Diseño compacto y versátil.</span></span></p></li><li><p><span style=\"color: rgb(75, 85, 99);\"><span",
     "stock": 99,
     "price": 24.5,
-    "priceSuggested": 38.0,
+    "priceSuggested": 38,
     "categories": [
       "Moda",
       "Deportes",
@@ -560,8 +582,8 @@
     "type": "SIMPLE",
     "description": "<h3 style=\"text-align: start;\"><strong><span style=\"color: rgb(50, 57, 77);\"><span style=\"background-color: rgb(255, 255, 255);\">🏕️ Cantimplora Militar con Taza + Spork Plegable – Kit de Hidratación Todo en Uno 💧🔥</span></span></strong></h3><h4 style=\"text-align: start;\"><strong><span style=\"color: rgb(50, 57, 77);\"><span style=\"background-color: rgb(255, 255, 255);\">💼 Diseñada para Aventureros, Excursionistas y Amantes del Camping</span></span></strong></h4><p style=\"text-align: start;\"><span s",
     "stock": 99,
-    "price": 15.0,
-    "priceSuggested": 30.0,
+    "price": 15,
+    "priceSuggested": 30,
     "categories": [
       "Camping",
       "Pesca",
@@ -612,7 +634,7 @@
     "description": "<h2 style=\"text-align: start;\"><strong><span style=\"color: rgb(50, 57, 77);\"><span style=\"background-color: rgb(255, 255, 255);\">Fregadora Eléctrica de Alta Velocidad para Limpieza Profunda</span></span></strong></h2><h3 style=\"text-align: start;\"><strong><span style=\"color: rgb(50, 57, 77);\"><span style=\"background-color: rgb(255, 255, 255);\">Potencia Profesional para Resultados Impecables</span></span></strong></h3><h4 style=\"text-align: start;\"><strong><span style=\"color: rgb(50, 57, 77);\"><s",
     "stock": 100,
     "price": 14.5,
-    "priceSuggested": 30.0,
+    "priceSuggested": 30,
     "categories": [
       "Hogar",
       "Tecnologia",
@@ -661,7 +683,7 @@
     "description": "<h2>🛏️ ¿Qué es un colchón inflable para auto?</h2><p>Un <strong>colchón inflable para auto</strong> es una cama portátil diseñada para <strong>adaptarse al interior de un vehículo</strong> (generalmente sobre los asientos traseros o área entre asientos), permitiendo dormir cómodamente sin necesidad de tienda o carpa.</p><p><strong>Usos comunes:</strong></p><ul><li><p>Camping y viajes en carretera</p></li><li><p>Descansos largos en viajes nocturnos</p></li><li><p>Emergencias o paradas imprevistas",
     "stock": 100,
     "price": 24.75,
-    "priceSuggested": 38.0,
+    "priceSuggested": 38,
     "categories": [
       "Hogar",
       "Vehículos"
@@ -809,7 +831,7 @@
     "description": "<p>ENVIOS TOTAL MENTE SEGURO</p><p>GARANTIZADO</p><p>Misión – Envíos Seguros Brindar soluciones integrales de logística y mensajería, garantizando envíos seguros, rápidos y confiables, que protejan la integridad de cada paquete desde el origen hasta el destino. La misión se basa en la responsabilidad, trazabilidad, puntualidad y atención al cliente, apoyándose en tecnología, procesos estandarizados y personal capacitado para generar confianza y satisfacción en personas y empresas.</p><p>Si lo de",
     "stock": 96,
     "price": 0.5,
-    "priceSuggested": 1.0,
+    "priceSuggested": 1,
     "categories": [
       "Tecnologia"
     ],
@@ -908,8 +930,8 @@
     "type": "SIMPLE",
     "description": "<p></p><p>📢MGAFAS SMART BLUET00TH 2 EN 1</p><p>💥 PRODUCTO GANADOR EN TENDENCIA 🔥</p><p>GAFAS SMART BLUET00TH 2 EN 1 – PRECIOS MAYOR Y MENOR 🔥</p><p>💰 Precio unidad: 21,00</p><p>💰 Precio mayor desde 3 unidades: 19,75</p><p>  🔥 CAMPAÑA PULICITARIA PRECIO 18,75</p><p>📦 STOCK ASEGURADO</p><p>🚚 DESPACHO EN 7 HORAS</p><p>⚠️ ÚLTIMAS UNIDADES DISPONIBLES</p><p>🔥 Productos probados antes de ser despachados</p><p>🚀 Apoyo en cierre de ventas con clientes</p><p>🔒 Garantía por defecto de fábrica</p><p>OFRECE",
     "stock": 150,
-    "price": 19.0,
-    "priceSuggested": 19.0,
+    "price": 19,
+    "priceSuggested": 19,
     "categories": [
       "Moda",
       "Tecnologia",
@@ -933,8 +955,8 @@
     "type": "SIMPLE",
     "description": "<blockquote><p>📢GAME STICK 2.46 PRO CONSOLA DE JUEGOS</p><p>💥 PRODUCTO GANADOR EN TENDENCIA 🔥</p><p>GAME STICK 2.46 PRO CONSOLA DE JUEGOS – PRECIOS MAYOR Y MENOR 🔥</p><p>💰 Precio unidad: 35,00</p><p>💰 Precio mayor desde 3 unidades: 34,50</p><p>🔥 CAMPAÑA PULICITARIA PRECIO 34,00</p><p>📦 STOCK ASEGURADO</p><p>🚚 DESPACHO EN 7 HORAS</p><p>⚠️ ÚLTIMAS UNIDADES DISPONIBLES</p><p>🔥 Productos probados antes de ser despachados</p><p>🚀 Apoyo en cierre de ventas con clientes</p><p>🔒 Garantía por defecto de ",
     "stock": 200,
-    "price": 35.0,
-    "priceSuggested": 35.0,
+    "price": 35,
+    "priceSuggested": 35,
     "categories": [
       "Tecnologia",
       "Jugueteria"
@@ -982,7 +1004,7 @@
     "description": "<h2>📢 <strong>JBL Flip 7 STOCK LIMITADO</strong></h2><p>💥 PRODUCTO GANADOR EN TENDENCIA 🔥</p><p>FLING 7 REPLICA ORIGINAL – PRECIOS MAYOR Y MENOR 🔥</p><p>💰 Precio unidad: 17,50</p><p>💰 Precio mayor desde 3 unidades: 16,95</p><p>📦 STOCK ASEGURADO</p><p>🚚 DESPACHO EN 7 HORAS</p><p>⚠️ ÚLTIMAS UNIDADES DISPONIBLES</p><p>🔥 Productos probados antes de ser despachados</p><p>🚀 Apoyo en cierre de ventas con clientes</p><p>🔒 Garantía por defecto de fábrica</p><p>TELF 0964151841 NUMERO DIRECTO DE LA EMPRESA",
     "stock": 200,
     "price": 17.5,
-    "priceSuggested": 60.0,
+    "priceSuggested": 60,
     "categories": [
       "Hogar",
       "Tecnologia"
@@ -1005,8 +1027,8 @@
     "type": "SIMPLE",
     "description": "<p>📢HDMI2AV  PREMIUN X2</p><p>💥 PRODUCTO GANADOR EN TENDENCIA 🔥</p><p>HDMI2AV  PREMIUN X2 – PRECIOS MAYOR Y MENOR 🔥</p><p>💰 Precio unidad: 9.00</p><p>💰 Precio mayor desde 3 unidades: 8,00</p><p>  🔥 CAMPAÑA PULICITARIA PRECIO 7,00</p><p>📦 STOCK ASEGURADO</p><p>🚚 DESPACHO EN 7 HORAS</p><p>⚠️ ÚLTIMAS UNIDADES DISPONIBLES</p><p>🔥 Productos probados antes de ser despachados</p><p>🚀 Apoyo en cierre de ventas con clientes</p><p>🔒 Garantía por defecto de fábrica</p><p>OFRECEMOS 93 % DE ENTREGAS EXIITOSA",
     "stock": 100,
-    "price": 7.0,
-    "priceSuggested": 7.0,
+    "price": 7,
+    "priceSuggested": 7,
     "categories": [
       "Hogar",
       "Tecnologia"
@@ -1104,7 +1126,7 @@
     "description": "<h2 style=\"text-align: start;\"><strong><span style=\"color: rgb(50, 57, 77);\"><span style=\"background-color: rgb(255, 255, 255);\">Dron K11 Turbo – Estabilización 3 ejes, Video HD</span></span></strong></h2><h3 style=\"text-align: start;\"><strong><span style=\"color: rgb(50, 57, 77);\"><span style=\"background-color: rgb(255, 255, 255);\">Amplía tu vista aérea con tecnología avanzada</span></span></strong></h3><p style=\"text-align: start;\"><span style=\"color: rgb(75, 85, 99);\"><span style=\"background-c",
     "stock": 299,
     "price": 19.5,
-    "priceSuggested": 40.0,
+    "priceSuggested": 40,
     "categories": [
       "Tecnologia"
     ],
@@ -1127,7 +1149,7 @@
     "description": "<p>El <strong>Ajedrez</strong> es un juego de estrategia para <strong>dos jugadores</strong> que se juega en un tablero de <strong>64 casillas</strong> (8×8) con piezas blancas y negras. Es uno de los juegos más antiguos y populares del mundo, conocido por desarrollar <strong>pensamiento lógico, concentración y planificación</strong>.</p><hr><h3>🧩 Objetivo del juego</h3><p>El objetivo es dar <strong>jaque mate</strong> al <strong>rey</strong> del oponente.<br>Esto significa que el rey está <stro",
     "stock": 99,
     "price": 7.95,
-    "priceSuggested": 20.0,
+    "priceSuggested": 20,
     "categories": [
       "Hogar",
       "Natural Home",
@@ -1152,7 +1174,7 @@
     "description": "<p>El <strong>juego de mesa Ahorcado</strong> es un juego clásico donde los jugadores deben <strong>adivinar una palabra letra por letra</strong> antes de que se complete el dibujo del ahorcado. Es educativo y ayuda a mejorar el vocabulario y la ortografía.</p><h2>🧩 Ejemplo de juego de mesa Ahorcado</h2><h2>📦 Características del juego</h2><ul><li><p>👥 <strong>Jugadores:</strong> 2 o más</p></li><li><p>🎂 <strong>Edad recomendada:</strong> desde 6 años</p></li><li><p>⏱ <strong>Duración:</strong> 1",
     "stock": 100,
     "price": 15.75,
-    "priceSuggested": 35.0,
+    "priceSuggested": 35,
     "categories": [
       "Hogar",
       "Natural Home",
@@ -1177,7 +1199,7 @@
     "description": "<h3>🎵 <strong>1. Sonido y potencia</strong></h3><ul><li><p>🔊 <strong>Audio estéreo de calidad</strong> con potencia efectiva suficiente para espacios pequeños y medianos.</p></li><li><p>💥 Potencia de salida típica: <strong>8–10 W RMS</strong> según el modelo QS.</p></li><li><p>🎚️ Rango de frecuencia amplio (≈100 Hz – 20 kHz), ofreciendo graves definidos y agudos claros.<br>👉 Estos parlantes suelen usar un <strong>woofer de 6.5 ″ o similar</strong> para un sonido más pleno.</p></li></ul><hr><h3>📡",
     "stock": 100,
     "price": 10.75,
-    "priceSuggested": 25.0,
+    "priceSuggested": 25,
     "categories": [
       "Tecnologia",
       "Natural Home"
@@ -1200,8 +1222,8 @@
     "type": "SIMPLE",
     "description": "<p><span style=\"color: rgb(75, 85, 99);\"><span style=\"background-color: rgb(255, 255, 255);\">🌞 Lámpara Solar de Pared LED 6W – 500Lm</span></span></p><p style=\"text-align: start;\"><span style=\"color: rgb(75, 85, 99);\"><span style=\"background-color: rgb(255, 255, 255);\">Esta lámpara solar de pared es ideal para iluminar exteriores como jardines, patios, terrazas y entradas, ofreciendo una solución ecológica y eficiente sin necesidad de cableado.</span></span></p><p style=\"text-align: start;\"><spa",
     "stock": 100,
-    "price": 9.0,
-    "priceSuggested": 18.0,
+    "price": 9,
+    "priceSuggested": 18,
     "categories": [
       "Hogar",
       "Tecnologia"
@@ -1249,7 +1271,7 @@
     "description": "<p><span style=\"color: rgb(75, 85, 99);\"><span style=\"background-color: rgb(255, 255, 255);\">La máquina de callos es un dispositivo eléctrico portátil diseñado para eliminar de manera eficaz y segura la piel muerta, callosidades y durezas en los pies. Su funcionamiento se basa en un motor que impulsa un cabezal giratorio con una superficie abrasiva, permitiendo una exfoliación profunda y cómoda.</span></span></p><p style=\"text-align: start;\"><span style=\"color: rgb(75, 85, 99);\"><span style=\"bac",
     "stock": 160,
     "price": 7.5,
-    "priceSuggested": 25.0,
+    "priceSuggested": 25,
     "categories": [
       "Hogar",
       "Belleza"
@@ -1346,8 +1368,8 @@
     "type": "SIMPLE",
     "description": "<p><strong><span style=\"color: rgb(75, 85, 99);\"><span style=\"background-color: rgb(255, 255, 255);\">🔹 Características comunes Boombox</span></span></strong></p><ul><li><p><span style=\"color: rgb(75, 85, 99);\"><span style=\"background-color: rgb(255, 255, 255);\">Sonido muy potente, con graves profundos y buenos agudos.</span></span></p></li><li><p><span style=\"color: rgb(75, 85, 99);\"><span style=\"background-color: rgb(255, 255, 255);\">Resistencia al agua / piscina (certificación como IPX7 o IP67",
     "stock": 100,
-    "price": 189.0,
-    "priceSuggested": 230.0,
+    "price": 189,
+    "priceSuggested": 230,
     "categories": [
       "Hogar",
       "Tecnologia",
@@ -1372,7 +1394,7 @@
     "description": "<p><span style=\"color: rgb(75, 85, 99);\"><span style=\"background-color: rgb(255, 255, 255);\">NUEVO PARLANTE MEGA BOOMBOX</span></span></p><p style=\"text-align: start;\"><span style=\"color: rgb(75, 85, 99);\"><span style=\"background-color: rgb(255, 255, 255);\">INCLUYE AURIICULARES JBL</span></span></p><p>PARLANTE NEGRO  20</p><p>PARLANTE AZUL 20</p><p>PARLANTE ROJO 17</p><p>PARLANTE VERDE 15</p><p> LUCES LED ALTO SONIDO </p>",
     "stock": 100,
     "price": 39.5,
-    "priceSuggested": 60.0,
+    "priceSuggested": 60,
     "categories": [
       "Hogar",
       "Tecnologia",
@@ -1397,7 +1419,7 @@
     "description": "<h3>💪 1. <strong>Alta dureza (9H o superior)</strong></h3><ul><li><p>Significa resistencia contra arañazos fuertes (como llaves o herramientas).</p></li><li><p>Las micas profesionales usan <strong>vidrio templado o UltraGlass reforzado</strong>.</p></li></ul><h3>🛡️ 2. <strong>Protección contra impactos</strong></h3><ul><li><p>Absorbe golpes y dispersa la energía para que la pantalla original no se rompa.</p></li></ul><h3>👆 3. <strong>Sensibilidad táctil intacta</strong></h3><ul><li><p>La pantall",
     "stock": 100,
     "price": 6.5,
-    "priceSuggested": 25.0,
+    "priceSuggested": 25,
     "categories": [
       "Tecnologia"
     ],
@@ -1419,8 +1441,8 @@
     "type": "SIMPLE",
     "description": "<p><span style=\"color: rgb(75, 85, 99);\"><span style=\"background-color: rgb(255, 255, 255);\">Un micrófono inalámbrico es un dispositivo que capta sonido y lo transmite sin cables, usando un </span></span><strong><span style=\"color: rgb(75, 85, 99);\"><span style=\"background-color: rgb(255, 255, 255);\">transmisor</span></span></strong><span style=\"color: rgb(75, 85, 99);\"><span style=\"background-color: rgb(255, 255, 255);\"> que lo convierte en señales de radiofrecuencia para enviarlo a un </span><",
     "stock": 150,
-    "price": 15.0,
-    "priceSuggested": 30.0,
+    "price": 15,
+    "priceSuggested": 30,
     "categories": [
       "Tecnologia"
     ],
@@ -1443,7 +1465,7 @@
     "description": "<h3 style=\"text-align: start;\"><strong><span style=\"color: rgb(50, 57, 77);\"><span style=\"background-color: rgb(255, 255, 255);\">Micrófono de Solapa Inalámbrico F15-2 | Doble Pack Tipo C + Lightning</span></span></strong></h3><h4 style=\"text-align: start;\"><strong><span style=\"color: rgb(50, 57, 77);\"><span style=\"background-color: rgb(255, 255, 255);\">Sonido profesional sin cables, compatible con todos tus dispositivos</span></span></strong></h4><p style=\"text-align: start;\"><span style=\"color:",
     "stock": 98,
     "price": 18.5,
-    "priceSuggested": 39.0,
+    "priceSuggested": 39,
     "categories": [
       "Moda",
       "Tecnologia"
@@ -1543,8 +1565,8 @@
     "type": "SIMPLE",
     "description": "<h4 style=\"text-align: start;\"><strong><span style=\"color: rgb(50, 57, 77);\"><span style=\"background-color: rgb(255, 255, 255);\">✨ Mopa de Repuesto para Trapeador con Spray ✨</span></span></strong></h4><h4 style=\"text-align: start;\"><strong><span style=\"color: rgb(50, 57, 77);\"><span style=\"background-color: rgb(255, 255, 255);\">Ideal para mantener tus pisos impecables con el mínimo esfuerzo.<br>Suave, absorbente y de alta durabilidad, esta mopa garantiza una limpieza profunda sin rayar las supe",
     "stock": 100,
-    "price": 2.0,
-    "priceSuggested": 5.0,
+    "price": 2,
+    "priceSuggested": 5,
     "categories": [
       "Hogar",
       "Mascotas",
@@ -1569,8 +1591,8 @@
     "type": "SIMPLE",
     "description": "<p><span style=\"color: rgb(75, 85, 99);\"><span style=\"background-color: rgb(255, 255, 255);\">**</span></span><strong><span style=\"color: rgb(75, 85, 99);\"><span style=\"background-color: rgb(255, 255, 255);\">NO INCLUYE LA ORDINARY CLICOLICO</span></span></strong></p><h3 style=\"text-align: start;\"><strong><span style=\"color: rgb(50, 57, 77);\"><span style=\"background-color: rgb(255, 255, 255);\">Kit Profesional de Cuidado Facial x3 – , Niacinamida, AHA/BHA y Cafeína</span></span></strong></h3><h4 st",
     "stock": 98,
-    "price": 15.0,
-    "priceSuggested": 30.0,
+    "price": 15,
+    "priceSuggested": 30,
     "categories": [
       "Belleza",
       "Salud",
@@ -1595,7 +1617,7 @@
     "description": "<p>El <strong>parlante ALEXE</strong> es un <strong>altavoz Bluetooth portátil  EL USIO EXCLUSIVO REPRODUCCION DE MUSICA NO ES COMPAPTIBLE COMANDOS DE VOZ</strong> pensado para ofrecer música en cualquier lugar, con sonido inalámbrico, conectividad versátil y funciones adicionales como <strong>luz LED decorativa y radio FM</strong>. Es ideal para uso  casa, reuniones pequeñas, exteriores informales o espacios donde quieres un dispositivo compacto y fácil de usar.</p><hr><h2>🎶 <strong>Característ",
     "stock": 59,
     "price": 9.75,
-    "priceSuggested": 20.0,
+    "priceSuggested": 20,
     "categories": [
       "Tecnologia",
       "Natural Home"
@@ -1714,8 +1736,8 @@
     "type": "SIMPLE",
     "description": "<h2>🔊 Información del <strong>JBL Charge 6</strong> — <strong>Parlante Bluetooth portátil REPLICA</strong></h2><p>El <strong>JBL Charge 6</strong> es un <strong>altavoz inalámbrico portátil</strong> diseñado para ofrecer sonido potente, buena batería y resistencia al agua y al polvo. Es una evolución de la serie <em>Charge</em>, con mejoras en autonomía, conectividad y durabilidad.</p><p>costo adicional de la caja 🔥</p><p></p><p>📢<strong>JBL Charge 6 PARLANTE REPLICA</strong></p><p>💥 PRODUCTO GA",
     "stock": 120,
-    "price": 15.0,
-    "priceSuggested": 15.0,
+    "price": 15,
+    "priceSuggested": 15,
     "categories": [
       "Moda",
       "Tecnologia"
@@ -1738,8 +1760,8 @@
     "type": "SIMPLE",
     "description": "<p>📢 PARLANTE CHARGE 7 REPLICA</p><p>💥 PRODUCTO GANADOR EN TENDENCIA 🔥</p><p>JBL CHARGE  7 REPLICA ORIGINAL – PRECIOS MAYOR Y MENOR 🔥</p><p>💰 Precio unidad: 19,00</p><p>💰 Precio mayor desde 3 unidades: 17,95</p><p>📦 STOCK ASEGURADO</p><p>🚚 DESPACHO EN 7 HORAS</p><p>⚠️ ÚLTIMAS UNIDADES DISPONIBLES</p><p>🔥 Productos probados antes de ser despachados</p><p>🚀 Apoyo en cierre de ventas con clientes</p><p>🔒 Garantía por defecto de fábrica</p><p>OFRECEMOS 93 % DE ENTREGAS EXIITOSAS Y UN SOLO 7 % DE DEV",
     "stock": 100,
-    "price": 19.0,
-    "priceSuggested": 55.0,
+    "price": 19,
+    "priceSuggested": 55,
     "categories": [
       "Tecnologia"
     ],
@@ -1858,7 +1880,7 @@
     "description": "<p><span style=\"color: rgb(75, 85, 99);\"><span style=\"background-color: rgb(255, 255, 255);\">PARLANTE JBL BOOMBOX REPLICA</span></span></p><p style=\"text-align: start;\"><span style=\"color: rgb(75, 85, 99);\"><span style=\"background-color: rgb(255, 255, 255);\">REPLICA</span></span></p><p style=\"text-align: start;\"><span style=\"color: rgb(75, 85, 99);\"><span style=\"background-color: rgb(255, 255, 255);\">LARGO 34 CM ALTO 20 ANCH0 8 CM</span></span></p><p style=\"text-align: start;\"><span style=\"color",
     "stock": 251,
     "price": 26.5,
-    "priceSuggested": 60.0,
+    "priceSuggested": 60,
     "categories": [
       "Hogar",
       "Tecnologia",
@@ -1883,7 +1905,7 @@
     "description": "<p>📢 PARLANTE JBL BOMBOX  STOCK LIMITADO 🔥</p><p>💥 PRODUCTO GANADOR EN TENDENCIA 🔥</p><p> PARLANTE JBL BOMBOX   REPLICA ORIGINAL – PRECIOS MAYOR Y MENOR 🔥</p><p>💰 Precio unidad: 28,95</p><p>💰 Precio mayor desde 3 unidades: 27,50</p><p>📦 STOCK ASEGURADO</p><p>🚚 DESPACHO EN 7 HORAS</p><p>⚠️ ÚLTIMAS UNIDADES DISPONIBLES</p><p>🔥 Productos probados antes de ser despachados</p><p>🚀 Apoyo en cierre de ventas con clientes</p><p>🔒 Garantía por defecto de fábrica</p><p>OFRECEMOS 93 % DE ENTREGAS EXIITOSAS",
     "stock": 63,
     "price": 28.95,
-    "priceSuggested": 55.0,
+    "priceSuggested": 55,
     "categories": [
       "Hogar",
       "Tecnologia"
@@ -1979,8 +2001,8 @@
     "type": "SIMPLE",
     "description": "<p></p><h2><strong><span style=\"color: rgb(0, 0, 0);\"><span style=\"background-color: rgb(255, 255, 255);\">El JBL Flip 6 es un altavoz portátil resistente al agua y polvo, con sonido potente, batería de larga duración y conectividad Bluetooth </span></span></strong><a href=\"5.1.\" target=\"_blank\"><strong><span style=\"color: rgb(0, 0, 0);\"><span style=\"background-color: rgb(255, 255, 255);\">5.1.</span></span></strong></a></h2><h2><strong><span style=\"color: rgb(0, 0, 0);\"><span style=\"background-co",
     "stock": 1000,
-    "price": 16.0,
-    "priceSuggested": 16.0,
+    "price": 16,
+    "priceSuggested": 16,
     "categories": [
       "Tecnologia"
     ],
@@ -2003,7 +2025,7 @@
     "description": "<h3>🔊 JBL Flip 7 original  REPLICA MAS PARECIDA AL ORIGINAL</h3><ul><li><p>Sonido <strong>JBL Pro Sound</strong> con tecnología <strong>AI Sound Boost</strong>.</p></li><li><p><strong>Hasta 16 horas de batería</strong> con modo Playtime Boost.</p></li><li><p><strong>Resistente al agua y polvo (IP67/IP68)</strong>.</p></li><li><p><strong>Bluetooth </strong><a href=\"5.4\" target=\"_blank\"><strong>5.4</strong></a> para conexión estable.</p></li><li><p>Se pueden conectar <strong>varios parlantes JBL c",
     "stock": 96,
     "price": 35.75,
-    "priceSuggested": 75.0,
+    "priceSuggested": 75,
     "categories": [
       "Tecnologia",
       "Camping"
@@ -2051,7 +2073,7 @@
     "description": "<p><span style=\"color: rgb(75, 85, 99);\"><span style=\"background-color: rgb(255, 255, 255);\">El JBL Flip 6 REPLICA AAA es un </span></span><strong><span style=\"color: rgb(75, 85, 99);\"><span style=\"background-color: rgb(255, 255, 255);\">altavoz portátil Bluetooth</span></span></strong><span style=\"color: rgb(75, 85, 99);\"><span style=\"background-color: rgb(255, 255, 255);\"> de forma cilíndrica. Es conocido por su </span></span><strong><span style=\"color: rgb(75, 85, 99);\"><span style=\"background",
     "stock": 0,
     "price": 13.5,
-    "priceSuggested": 26.0,
+    "priceSuggested": 26,
     "categories": [
       "Moda",
       "Tecnologia"
@@ -2221,7 +2243,7 @@
     "description": "<h2>🤖 <strong>¿Qué es un perro robot?</strong></h2><p>Un <strong>perro robot</strong> es un <strong>robot móvil con forma y comportamiento inspirado en un perro real</strong>, diseñado para interactuar con el entorno y con personas. Combina <strong>mecánica avanzada, sensores inteligentes y programación</strong>, para moverse de forma autónoma o controlada, responder a sonidos, reconocer personas, realizar tareas e incluso aprender.</p><hr><h2>🧠 <strong>Características principales</strong></h2><",
     "stock": 100,
     "price": 22.5,
-    "priceSuggested": 60.0,
+    "priceSuggested": 60,
     "categories": [
       "Mascotas",
       "Tecnologia"
@@ -2295,7 +2317,7 @@
     "description": "<p><span style=\"color: rgb(75, 85, 99);\"><span style=\"background-color: rgb(255, 255, 255);\">1 RADIO</span></span></p><p style=\"text-align: start;\"><strong><span style=\"color: rgb(75, 85, 99);\"><span style=\"background-color: rgb(255, 255, 255);\">Walkie Talkie Profesional – Comunicación Eficiente y Portátil para Actividades al Aire Libre</span></span></strong></p><p style=\"text-align: start;\"><span style=\"color: rgb(75, 85, 99);\"><span style=\"background-color: rgb(255, 255, 255);\">Potencia, resis",
     "stock": 92,
     "price": 37.5,
-    "priceSuggested": 65.0,
+    "priceSuggested": 65,
     "categories": [
       "Tecnologia",
       "Vehículos"
@@ -2366,8 +2388,8 @@
     "type": "SIMPLE",
     "description": "<p></p><p>📢SECADORA PROFESIONAL 5 EN 1  PRO</p><p>💥 PRODUCTO GANADOR EN TENDENCIA 🔥</p><p>SECADORA PROFESIONAL 5 EN 1  PRO – PRECIOS MAYOR Y MENOR 🔥</p><p>💰 Precio unidad: 15,00</p><p>💰 Precio mayor desde 3 unidades: 13,75</p><p>  🔥 CAMPAÑA PULICITARIA PRECIO 11,00</p><p>📦 STOCK ASEGURADO</p><p>🚚 DESPACHO EN 7 HORAS</p><p>⚠️ ÚLTIMAS UNIDADES DISPONIBLES</p><p>🔥 Productos probados antes de ser despachados</p><p>🚀 Apoyo en cierre de ventas con clientes</p><p>🔒 Garantía por defecto de fábrica</p><p",
     "stock": 200,
-    "price": 11.0,
-    "priceSuggested": 11.0,
+    "price": 11,
+    "priceSuggested": 11,
     "categories": [
       "Tecnologia",
       "Belleza"
@@ -2390,8 +2412,8 @@
     "type": "SIMPLE",
     "description": "<p>📢SMARTS WACH 8 EN 1  CON AUDIFONO ESTUCHE  Y DISEÑOS PERSONALIZADOS</p><p>💥 PRODUCTO GANADOR EN TENDENCIA 🔥</p><p>SMARTS WACH 8 EN 1  CON AUDIFONO ESTUCHE  – PRECIOS MAYOR Y MENOR 🔥</p><p>💰 Precio unidad: 25,00</p><p>💰 Precio mayor desde 3 unidades: 23,75</p><p>  🔥 CAMPAÑA PULICITARIA PRECIO 20,15</p><p>📦 STOCK ASEGURADO</p><p>🚚 DESPACHO EN 7 HORAS</p><p>⚠️ ÚLTIMAS UNIDADES DISPONIBLES</p><p>🔥 Productos probados antes de ser despachados</p><p>🚀 Apoyo en cierre de ventas con clientes</p><p>🔒 G",
     "stock": 200,
-    "price": 19.0,
-    "priceSuggested": 19.0,
+    "price": 19,
+    "priceSuggested": 19,
     "categories": [
       "Moda",
       "Tecnologia"
@@ -2534,8 +2556,8 @@
     "type": "SIMPLE",
     "description": "<p><span style=\"color: rgb(75, 85, 99);\"><span style=\"background-color: rgb(255, 255, 255);\">SE ENVÍA EN COLOR ALEATORIO</span></span></p><p>Plástico impermeable diseñado para cubrir y proteger objetos, superficies o equipos contra el agua, la humedad, el polvo y salpicaduras. Está fabricado en material plástico resistente y flexible, lo que permite adaptarse fácilmente a diferentes formas y tamaños. Ideal para uso doméstico, industrial o exterior, ofreciendo una barrera eficaz que ayuda a preve",
     "stock": 100,
-    "price": 18.0,
-    "priceSuggested": 37.0,
+    "price": 18,
+    "priceSuggested": 37,
     "categories": [
       "Camping",
       "Pesca"
@@ -2608,7 +2630,7 @@
     "description": "<h2 style=\"text-align: start;\"><strong><span style=\"color: rgb(50, 57, 77);\"><span style=\"background-color: rgb(255, 255, 255);\">Description</span></span></strong></h2><h3 style=\"text-align: start;\"><strong><span style=\"color: rgb(50, 57, 77);\"><span style=\"background-color: rgb(255, 255, 255);\">Características principales</span></span></strong></h3><ul><li><p><strong><span style=\"color: rgb(75, 85, 99);\"><span style=\"background-color: rgb(255, 255, 255);\">Sistema operativo Android 9.0:</span></",
     "stock": 98,
     "price": 22.5,
-    "priceSuggested": 45.0,
+    "priceSuggested": 45,
     "categories": [
       "Hogar",
       "Tecnologia"
@@ -2632,7 +2654,7 @@
     "description": "<h2>🔌  USB-C Headset Jack Adapter?</h2><p>Un <strong>adaptador USB-C a 3.5 mm</strong> es un accesorio pequeño que te permite <strong>usar auriculares con conector de 3.5 mm en dispositivos modernos que solo tienen puerto USB-C</strong> (como teléfonos, tablets o laptops sin toma de auriculares tradicional).</p><hr><h2>🎧 ¿Cómo funciona?</h2><ul><li><p><strong>Convierte la señal digital del USB-C en señal analógica de audio</strong> que pueden recibir tus auriculares con plug de 3.5 mm. Esto se h",
     "stock": 30,
     "price": 5.5,
-    "priceSuggested": 13.0,
+    "priceSuggested": 13,
     "categories": [
       "Tecnologia"
     ],
@@ -2704,7 +2726,7 @@
     "description": "<h2>📹 <strong>Cámara Wi‑Fi Smart (Smart Wi‑Fi Camera)</strong></h2><p>Una <strong>cámara Wi‑Fi inteligente</strong> es un dispositivo de seguridad conectado a tu red inalámbrica que te permite <strong>ver, grabar y gestionar video en tiempo real desde tu celular o computador</strong> sin cables de red físicos.</p><h3>🔑 <strong>Funciones principales</strong></h3><p><strong>📡 Conexión Wi‑Fi:</strong><br>Se conecta a la red de tu casa u oficina (2.4 GHz típicamente) para transmitir video sin cables",
     "stock": 100,
     "price": 19.75,
-    "priceSuggested": 40.0,
+    "priceSuggested": 40,
     "categories": [
       "Hogar",
       "Tecnologia"

@@ -1,6 +1,7 @@
 'use client'
 
-import React, { useState, useMemo } from 'react'
+import React, { useState, useEffect, useMemo } from 'react'
+import Link from 'next/link'
 import { getAllProducts, getCategories } from '@/lib/products'
 import { generateProductsPDF } from '@/lib/pdf-generator'
 import type { Product } from '@/lib/types'
@@ -14,12 +15,43 @@ import {
   Image as ImageIcon,
   DollarSign,
   Boxes,
-  Sparkles
+  Sparkles,
+  Plus
 } from 'lucide-react'
 
 export default function AdminProductosPage() {
-  const products = useMemo(() => getAllProducts(), [])
-  const categories = useMemo(() => getCategories(), [])
+  const initialProducts = useMemo(() => getAllProducts(), [])
+  const [products, setProducts] = useState<Product[]>(initialProducts)
+
+  // Fetch updated products list from API on mount
+  useEffect(() => {
+    fetch('/api/admin/productos')
+      .then(res => res.json())
+      .then(data => {
+        if (data.success && Array.isArray(data.products)) {
+          setProducts(data.products)
+        }
+      })
+      .catch(err => {
+        console.error('Error fetching updated products:', err)
+      })
+  }, [])
+
+  const categories = useMemo(() => {
+    const catMap = new Map<string, number>()
+    products.forEach(p => {
+      p.categories.forEach(c => {
+        catMap.set(c, (catMap.get(c) || 0) + 1)
+      })
+    })
+    return Array.from(catMap.entries())
+      .map(([name, count]) => ({
+        name,
+        count,
+        slug: name.toLowerCase().replace(/\s+/g, '-'),
+      }))
+      .sort((a, b) => b.count - a.count)
+  }, [products])
 
   const [search, setSearch] = useState('')
   const [selectedCategory, setSelectedCategory] = useState('ALL')
@@ -68,11 +100,19 @@ export default function AdminProductosPage() {
             Gestión de Productos & Catálogo PDF <Sparkles className="w-6 h-6 text-amber-400" />
           </h1>
           <p className="text-sm text-slate-400 mt-1">
-            Explorá, filtrá y exportá en PDF la lista completa de {products.length} productos de tu tienda.
+            Explorá, filtrá, agregá y exportá en PDF la lista completa de {products.length} productos de tu tienda.
           </p>
         </div>
 
         <div className="flex flex-wrap items-center gap-3">
+          <Link
+            href="/admin/productos/nuevo"
+            className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-extrabold text-xs md:text-sm shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 transition-all"
+          >
+            <Plus className="w-4 h-4 stroke-[3]" />
+            Agregar Producto
+          </Link>
+
           <button
             onClick={handleDownloadFilteredPDF}
             className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-100 font-semibold text-xs md:text-sm border border-slate-700 shadow-md hover:shadow-lg transition-all"
@@ -83,7 +123,7 @@ export default function AdminProductosPage() {
 
           <button
             onClick={handleDownloadFullPDF}
-            className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold text-xs md:text-sm shadow-lg shadow-amber-500/20 hover:shadow-amber-500/35 transition-all"
+            className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs md:text-sm border border-slate-700 hover:border-slate-600 transition-all"
           >
             <FileDown className="w-4 h-4" />
             Descargar Todo PDF ({products.length})

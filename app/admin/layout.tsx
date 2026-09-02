@@ -6,6 +6,7 @@ import { usePathname, useRouter } from 'next/navigation'
 import {
   LayoutDashboard,
   Package,
+  PackagePlus,
   Send,
   ArrowLeft,
   Crown,
@@ -73,6 +74,12 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
       href: '/admin/productos',
       icon: Package,
       description: 'Gestión de productos y descargas'
+    },
+    {
+      label: 'Nuevo Producto',
+      href: '/admin/productos/nuevo',
+      icon: PackagePlus,
+      description: 'Agregar producto al catálogo'
     },
     {
       label: 'Manifiestos Couriers',
