@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { ArrowLeft, Package, Truck, Shield, Phone, ChevronRight } from 'lucide-react'
 import { getProductBySlug, getAllProducts } from '@/lib/products'
 import ProductCard from '@/components/ProductCard'
+import ProductGallery from '@/components/ProductGallery'
 
 export function generateStaticParams() {
   return getAllProducts().map((p) => ({ slug: p.slug }))
@@ -48,34 +49,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14">
         {/* Images */}
-        <div>
-          {/* Main image */}
-          <div className="rounded-2xl overflow-hidden aspect-square" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border-default)' }}>
-            {product.images[0] ? (
-              <img
-                src={product.images[0]}
-                alt={product.name}
-                className="w-full h-full object-cover"
-              />
-            ) : (
-              <div className="w-full h-full flex items-center justify-center">
-                <Package size={64} style={{ color: 'var(--text-tertiary)' }} />
-              </div>
-            )}
-          </div>
-
-          {/* Thumbnails */}
-          {product.images.length > 1 && (
-            <div className="flex gap-2.5 mt-4 overflow-x-auto pb-2">
-              {product.images.slice(0, 5).map((img, i) => (
-                <div key={i} className="w-18 h-18 rounded-xl overflow-hidden shrink-0"
-                  style={{ border: '1px solid var(--border-default)', width: '72px', height: '72px' }}>
-                  <img src={img} alt="" className="w-full h-full object-cover" />
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
+        <ProductGallery images={product.images} name={product.name} />
 
         {/* Info */}
         <div>

@@ -359,17 +359,30 @@ body {
 
 /* ─── Prose override for descriptions ─── */
 .prose-custom {
-  color: var(--text-secondary);
+  color: var(--text-primary);
   line-height: 1.7;
   font-size: 14px;
 }
 
+.prose-custom *,
+.prose-custom span,
+.prose-custom mark,
+.prose-custom p,
+.prose-custom div,
+.prose-custom font,
+.prose-custom strong,
+.prose-custom b {
+  background: transparent !important;
+  background-color: transparent !important;
+  color: var(--text-primary) !important;
+}
+
 .prose-custom h1, .prose-custom h2, .prose-custom h3 {
-  color: var(--text-primary);
+  color: var(--text-primary) !important;
 }
 
 .prose-custom a {
-  color: var(--gold);
+  color: var(--gold) !important;
   text-decoration: underline;
 }
 

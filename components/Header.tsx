@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import Link from 'next/link'
-import { Search, Menu, X, Phone, Sun, Moon, Lock } from 'lucide-react'
+import { Menu, X, Phone, Sun, Moon, Lock } from 'lucide-react'
 import { useTheme } from '@/context/ThemeContext'
 
 import { usePathname } from 'next/navigation'
@@ -11,7 +11,6 @@ import { usePathname } from 'next/navigation'
 export default function Header() {
   const pathname = usePathname()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [searchQuery, setSearchQuery] = useState('')
   const { theme, toggle } = useTheme()
 
   if (pathname?.startsWith('/admin')) {
@@ -78,22 +77,8 @@ export default function Header() {
             </div>
           </Link>
 
-          {/* Search bar - desktop */}
-          <div className="hidden md:flex flex-1 max-w-lg">
-            <div className="relative w-full">
-              <Search className="absolute left-3.5 top-1/2 -translate-y-1/2" size={16} style={{ color: 'var(--text-tertiary)' }} />
-              <input
-                type="text"
-                placeholder="Buscar productos..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="input pl-10 pr-4 py-2.5"
-              />
-            </div>
-          </div>
-
           {/* Desktop nav */}
-          <nav className="hidden lg:flex items-center gap-1">
+          <nav className="hidden md:flex items-center gap-1">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -147,32 +132,18 @@ export default function Header() {
             {/* Mobile menu toggle */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="lg:hidden w-9 h-9 rounded-xl flex items-center justify-center transition-all hover:bg-[var(--gold-bg)]"
+              className="md:hidden w-9 h-9 rounded-xl flex items-center justify-center transition-all hover:bg-[var(--gold-bg)]"
               style={{ color: 'var(--text-secondary)' }}
             >
               {isMenuOpen ? <X size={22} /> : <Menu size={22} />}
             </button>
           </div>
         </div>
-
-        {/* Mobile search */}
-        <div className="md:hidden mt-3">
-          <div className="relative">
-            <Search className="absolute left-3.5 top-1/2 -translate-y-1/2" size={16} style={{ color: 'var(--text-tertiary)' }} />
-            <input
-              type="text"
-              placeholder="Buscar productos..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="input pl-10 pr-4 py-2.5"
-            />
-          </div>
-        </div>
       </div>
 
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="lg:hidden border-t animate-slide-down" style={{ borderColor: 'var(--border-default)', backgroundColor: 'var(--bg-secondary)' }}>
+        <div className="md:hidden border-t animate-slide-down" style={{ borderColor: 'var(--border-default)', backgroundColor: 'var(--bg-secondary)' }}>
           <nav className="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-1">
             {navLinks.map((link) => (
               <Link
