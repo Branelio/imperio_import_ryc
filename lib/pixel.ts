@@ -7,8 +7,26 @@ declare global {
 }
 
 export function trackPixelEvent(eventName: string, data: Record<string, any> = {}) {
+  // 1. Browser Pixel tracking
   if (typeof window !== 'undefined' && typeof window.fbq === 'function') {
     window.fbq('track', eventName, data)
+  }
+
+  // 2. Server-side Conversions API (CAPI) tracking
+  if (typeof window !== 'undefined') {
+    fetch('/api/pixel/event', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        eventName,
+        eventSourceUrl: window.location.href,
+        customData: data,
+      }),
+    }).catch((err) => {
+      console.error('Error triggering CAPI route:', err)
+    })
   }
 }
 
