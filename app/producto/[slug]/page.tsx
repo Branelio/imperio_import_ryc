@@ -4,6 +4,8 @@ import { ArrowLeft, Package, Truck, Shield, Phone, ChevronRight } from 'lucide-r
 import { getProductBySlug, getAllProducts } from '@/lib/products'
 import ProductCard from '@/components/ProductCard'
 import ProductGallery from '@/components/ProductGallery'
+import PixelProductTracker from '@/components/PixelProductTracker'
+import WhatsAppBuyButton from '@/components/WhatsAppBuyButton'
 
 export function generateStaticParams() {
   return getAllProducts().map((p) => ({ slug: p.slug }))
@@ -38,6 +40,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 md:py-12">
+      <PixelProductTracker product={product} />
       {/* Breadcrumb */}
       <div className="flex items-center gap-2 text-sm mb-8">
         <Link href="/" className="transition-colors hover:text-[var(--gold)]" style={{ color: 'var(--text-tertiary)' }}>Inicio</Link>
@@ -109,16 +112,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
 
             {/* CTA */}
             <div className="flex flex-col sm:flex-row gap-3 mt-6">
-              <a
-                href={`https://wa.me/593959883921?text=Hola,%20quiero%20comprar%20${encodeURIComponent(product.name)}%20-%20$${product.price}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold transition-all"
-                style={{ backgroundColor: 'var(--green)', color: '#fff' }}
-              >
-                <Phone size={18} />
-                Comprar por WhatsApp
-              </a>
+              <WhatsAppBuyButton product={product} />
               <a
                 href={`https://wa.me/593959883921?text=Hola,%20tengo%20una%20duda%20sobre%20${encodeURIComponent(product.name)}`}
                 target="_blank"
