@@ -68,7 +68,6 @@ export async function POST(request: Request) {
       isDropi,
     } = body
 
-    // Basic Validations
     if (!name || typeof name !== 'string' || !name.trim()) {
       return NextResponse.json(
         { success: false, message: 'El nombre del producto es obligatorio.' },
@@ -92,16 +91,13 @@ export async function POST(request: Request) {
 
     const products = await readProductsFromFile()
 
-    // Generate unique ID
     const maxId = products.reduce((max, p) => (p.id && p.id > max ? p.id : max), 0)
     const newId = maxId + 1
 
-    // SKU Generation if not provided
     const finalSku = (sku && typeof sku === 'string' && sku.trim())
       ? sku.trim().toUpperCase()
       : `IMP-${String(newId).padStart(4, '0')}`
 
-    // Check SKU duplicate
     if (products.some(p => p.sku.toLowerCase() === finalSku.toLowerCase())) {
       return NextResponse.json(
         { success: false, message: `El SKU "${finalSku}" ya existe en el catálogo.` },
@@ -109,7 +105,6 @@ export async function POST(request: Request) {
       )
     }
 
-    // Slug generation
     const finalSlug = (customSlug && typeof customSlug === 'string' && customSlug.trim())
       ? generateSlug(customSlug)
       : generateSlug(name)
@@ -136,7 +131,6 @@ export async function POST(request: Request) {
       isDropi: Boolean(isDropi),
     }
 
-    // Add new product at top of list
     products.unshift(newProduct)
 
     const saved = await writeProductsToFile(products)
@@ -156,6 +150,141 @@ export async function POST(request: Request) {
     console.error('Error in POST /api/admin/productos:', error)
     return NextResponse.json(
       { success: false, message: error?.message || 'Error en el servidor al agregar producto.' },
+      { status: 500 }
+    )
+  }
+}
+
+export async function PUT(request: Request) {
+  try {
+    const body = await request.json()
+    const {
+      id,
+      sku,
+      name,
+      slug: customSlug,
+      type,
+      description,
+      stock,
+      price,
+      priceSuggested,
+      categories,
+      approved,
+      inBodega,
+      images,
+      isDropi,
+    } = body
+
+    if (!id && !sku) {
+      return NextResponse.json(
+        { success: false, message: 'Se requiere el ID o SKU del producto a editar.' },
+        { status: 400 }
+      )
+    }
+
+    const products = await readProductsFromFile()
+    const index = products.findIndex(p => p.id === Number(id) || (sku && p.sku.toLowerCase() === String(sku).toLowerCase()))
+
+    if (index === -1) {
+      return NextResponse.json(
+        { success: false, message: 'Producto no encontrado.' },
+        { status: 404 }
+      )
+    }
+
+    const targetProduct = products[index]
+
+    if (name && typeof name === 'string' && name.trim()) {
+      targetProduct.name = name.trim()
+    }
+    if (sku && typeof sku === 'string' && sku.trim()) {
+      targetProduct.sku = sku.trim().toUpperCase()
+    }
+    if (customSlug && typeof customSlug === 'string' && customSlug.trim()) {
+      targetProduct.slug = generateSlug(customSlug)
+    } else if (name) {
+      targetProduct.slug = generateSlug(name)
+    }
+
+    if (type) targetProduct.type = type
+    if (description !== undefined) targetProduct.description = description
+    if (stock !== undefined && !isNaN(Number(stock))) targetProduct.stock = Number(stock)
+    if (price !== undefined && !isNaN(Number(price))) targetProduct.price = Number(price)
+    if (priceSuggested !== undefined && !isNaN(Number(priceSuggested))) targetProduct.priceSuggested = Number(priceSuggested)
+    if (Array.isArray(categories) && categories.length > 0) targetProduct.categories = categories
+    if (approved !== undefined) targetProduct.approved = Boolean(approved)
+    if (inBodega !== undefined) targetProduct.inBodega = inBodega || null
+    if (isDropi !== undefined) targetProduct.isDropi = Boolean(isDropi)
+
+    if (Array.isArray(images)) {
+      const cleanedImages = images.filter((img: string) => typeof img === 'string' && img.trim() !== '')
+      targetProduct.images = cleanedImages
+      targetProduct.hasImage = cleanedImages.length > 0
+    }
+
+    products[index] = targetProduct
+
+    const saved = await writeProductsToFile(products)
+    if (!saved) {
+      return NextResponse.json(
+        { success: false, message: 'Error al actualizar el producto en el servidor.' },
+        { status: 500 }
+      )
+    }
+
+    return NextResponse.json({
+      success: true,
+      message: 'Producto actualizado exitosamente.',
+      product: targetProduct,
+    })
+  } catch (error: any) {
+    console.error('Error in PUT /api/admin/productos:', error)
+    return NextResponse.json(
+      { success: false, message: error?.message || 'Error al editar producto.' },
+      { status: 500 }
+    )
+  }
+}
+
+export async function DELETE(request: Request) {
+  try {
+    const { searchParams } = new URL(request.url)
+    const idParam = searchParams.get('id')
+
+    if (!idParam) {
+      return NextResponse.json(
+        { success: false, message: 'ID de producto no especificado.' },
+        { status: 400 }
+      )
+    }
+
+    const targetId = Number(idParam)
+    const products = await readProductsFromFile()
+    const filtered = products.filter(p => p.id !== targetId)
+
+    if (filtered.length === products.length) {
+      return NextResponse.json(
+        { success: false, message: 'Producto no encontrado.' },
+        { status: 404 }
+      )
+    }
+
+    const saved = await writeProductsToFile(filtered)
+    if (!saved) {
+      return NextResponse.json(
+        { success: false, message: 'Error al eliminar el producto.' },
+        { status: 500 }
+      )
+    }
+
+    return NextResponse.json({
+      success: true,
+      message: 'Producto eliminado correctamente.',
+    })
+  } catch (error: any) {
+    console.error('Error in DELETE /api/admin/productos:', error)
+    return NextResponse.json(
+      { success: false, message: error?.message || 'Error al eliminar el producto.' },
       { status: 500 }
     )
   }
