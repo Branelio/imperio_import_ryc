@@ -1,29 +1,61 @@
-import productos from '@/data/productos.json'
+import productosStatic from '@/data/productos.json'
 import type { Product, Category } from '@/lib/types'
+import fs from 'fs'
+import path from 'path'
+import os from 'os'
+
+const dataFilePath = path.join(process.cwd(), 'data', 'productos.json')
+const tmpFilePath = path.join(os.tmpdir(), 'imperio_productos.json')
 
 export function getAllProducts(): Product[] {
-  return productos as Product[]
+  if (typeof window === 'undefined') {
+    try {
+      if (fs.existsSync(tmpFilePath)) {
+        const tmpData = fs.readFileSync(tmpFilePath, 'utf-8')
+        const parsed = JSON.parse(tmpData) as Product[]
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          return parsed
+        }
+      }
+    } catch {
+      // Fallthrough
+    }
+
+    try {
+      if (fs.existsSync(dataFilePath)) {
+        const fileData = fs.readFileSync(dataFilePath, 'utf-8')
+        const parsed = JSON.parse(fileData) as Product[]
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          return parsed
+        }
+      }
+    } catch {
+      // Fallthrough
+    }
+  }
+
+  return productosStatic as Product[]
 }
 
 export function getProductBySlug(slug: string): Product | undefined {
-  return (productos as Product[]).find(p => p.slug === slug)
+  return getAllProducts().find(p => p.slug === slug)
 }
 
 export function getProductsByCategory(category: string): Product[] {
-  return (productos as Product[]).filter(p =>
+  return getAllProducts().filter(p =>
     p.categories.some(c => c.toLowerCase() === category.toLowerCase())
   )
 }
 
 export function getFeaturedProducts(): Product[] {
-  return (productos as Product[])
+  return getAllProducts()
     .filter(p => p.approved && p.stock > 0 && p.price > 5)
     .sort((a, b) => b.stock - a.stock)
     .slice(0, 8)
 }
 
 export function getNewProducts(): Product[] {
-  return (productos as Product[])
+  return getAllProducts()
     .filter(p => p.approved && p.stock > 0)
     .slice(-8)
     .reverse()
@@ -31,7 +63,7 @@ export function getNewProducts(): Product[] {
 
 export function getCategories(): Category[] {
   const catMap = new Map<string, number>()
-  ;(productos as Product[]).forEach(p => {
+  getAllProducts().forEach(p => {
     p.categories.forEach(c => {
       catMap.set(c, (catMap.get(c) || 0) + 1)
     })
@@ -47,7 +79,7 @@ export function getCategories(): Category[] {
 
 export function searchProducts(query: string): Product[] {
   const q = query.toLowerCase()
-  return (productos as Product[]).filter(p =>
+  return getAllProducts().filter(p =>
     p.name.toLowerCase().includes(q) ||
     p.categories.some(c => c.toLowerCase().includes(q)) ||
     p.sku.toLowerCase().includes(q)
@@ -55,7 +87,7 @@ export function searchProducts(query: string): Product[] {
 }
 
 export function getDashboardStats() {
-  const prods = productos as Product[]
+  const prods = getAllProducts()
   const totalProducts = prods.length
   const inStockProducts = prods.filter(p => p.stock > 0).length
   const outOfStockProducts = totalProducts - inStockProducts

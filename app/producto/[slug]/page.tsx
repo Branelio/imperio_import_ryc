@@ -7,6 +7,8 @@ import ProductGallery from '@/components/ProductGallery'
 import PixelProductTracker from '@/components/PixelProductTracker'
 import WhatsAppBuyButton from '@/components/WhatsAppBuyButton'
 
+export const dynamic = 'force-dynamic'
+
 export function generateStaticParams() {
   return getAllProducts().map((p) => ({ slug: p.slug }))
 }
