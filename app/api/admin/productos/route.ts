@@ -3,26 +3,56 @@ import fs from 'fs/promises'
 import path from 'path'
 import type { Product } from '@/lib/types'
 
+import os from 'os'
+
 const dataFilePath = path.join(process.cwd(), 'data', 'productos.json')
+const tmpFilePath = path.join(os.tmpdir(), 'imperio_productos.json')
+
+let memoryProductsCache: Product[] | null = null
 
 async function readProductsFromFile(): Promise<Product[]> {
+  if (memoryProductsCache) {
+    return memoryProductsCache
+  }
+
+  try {
+    const tmpData = await fs.readFile(tmpFilePath, 'utf-8')
+    const parsed = JSON.parse(tmpData) as Product[]
+    if (Array.isArray(parsed) && parsed.length > 0) {
+      memoryProductsCache = parsed
+      return parsed
+    }
+  } catch {
+    // Fallthrough to repository file
+  }
+
   try {
     const fileData = await fs.readFile(dataFilePath, 'utf-8')
-    return JSON.parse(fileData) as Product[]
+    const parsed = JSON.parse(fileData) as Product[]
+    memoryProductsCache = parsed
+    return parsed
   } catch (error) {
     console.error('Error reading productos.json:', error)
-    return []
+    return memoryProductsCache || []
   }
 }
 
 async function writeProductsToFile(products: Product[]): Promise<boolean> {
+  memoryProductsCache = products
+
   try {
     await fs.writeFile(dataFilePath, JSON.stringify(products, null, 2), 'utf-8')
-    return true
-  } catch (error) {
-    console.error('Error writing productos.json:', error)
-    return false
+  } catch (error: any) {
+    console.warn('Cannot write to data/productos.json (likely read-only serverless environment):', error?.message)
   }
+
+  try {
+    await fs.writeFile(tmpFilePath, JSON.stringify(products, null, 2), 'utf-8')
+  } catch (error: any) {
+    console.warn('Cannot write to tmp directory:', error?.message)
+  }
+
+  return true
 }
 
 function generateSlug(text: string): string {
